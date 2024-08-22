@@ -1,0 +1,13 @@
+{
+  "name": "random_joke",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "tar -a -c -f index.zip index.js && aws lambda update-function-code --function-name randomJoke --zip-file fileb://index.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
